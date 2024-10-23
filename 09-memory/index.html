@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="reset.css">
+<script src="script.js" type="module" defer></script>
+
+<body>
+    <div id="game-background">
+        <h1>Memory Card Game</h1>
+
+        <div class="container">
+
+            <!-- Grid container -->
+            <div id="grid-container">
+
+            </div>
+
+            <!-- Menu panel -->
+            <div id="game-stats">
+                <!-- Time container -->
+                <div id="time-container" class="info-container">
+                    <p class="info-title saved-info">Best: <span id="best-time" class="info-number">00:00.000</span></p>
+                    <p class="info-title user-info">Time: <span id="current-time" class="info-number">00:00.000</span>
+                    </p>
+                </div>
+
+                <!-- Score container -->
+                <div id="score-container" class="info-container">
+                    <p class="info-title saved-info">Highest: <span class="info-number" id="high-score">0</span></p>
+                    <p class="info-title user-info">Sore: <span class="info-number" id="score">0</span></p>
+                </div>
+
+                <!-- Fedback text container -->
+                <div id="corinc-container" class="info-container">
+                    <p class="info-title">Correct: <span id="correct" class="info-number">0</span></p>
+                    <p class="info-title">Incorrect: <span id="incorrect" class="info-number">0</span></p>
+                </div>
+
+                <!-- Buttons container -->
+                <div class="buttons-container info-container" id="game-stats-buttons">
+
+                    <button id="grid-size-button">
+                        Choose Grid Size
+                    </button>
+
+                    <button id="new-game-button">
+                        New Game
+                    </button>
+
+                    <div id="game-mode-container">
+                        <h2 id="game-mode"></h2>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="reset-buttons-container">
+            <button id="reset-best-times-button">Reset Best Times</button>
+            <button id="reset-high-score-button">Reset High Score</button>
+        </div>
+    </div>
+
+    <!-- Pop-ups menus -->
+
+    <!-- Grid settings pop-up menu -->
+    <div id="size-settings-container" class="menu-pop-up-container">
+        <div id="size-settings-content" class="menu-pop-up-content">
+            <h2>Select difficulty:</h2>
+            <div class="buttons-container">
+
+                <button class="grid-option-button" data-size-one="2" data-size-two="2" data-difficulty="easiest">
+                    Super Easy
+                </button>
+
+                <button class="grid-option-button" data-size-one="3" data-size-two="4" data-difficulty="easy">
+                    Easy
+                </button>
+
+                <button class="grid-option-button" data-size-one="5" data-size-two="4" data-difficulty="normal">
+                    Normal
+                </button>
+
+                <button id="hard-button" class="grid-option-button" data-size-one="6" data-size-two="4"
+                    data-difficulty="hard">
+                    Hard
+                </button>
+
+            </div>
+
+            <div class="red-green-buttons-container">
+                <button id="close-size-settings" class="close red">
+                    Cancel
+                </button>
+
+                <button id="confirm-size-settings" class="confirm green">
+                    Confirm
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Confirm new game pop-up menu -->
+    <div id="new-game-container" class="menu-pop-up-container">
+        <div id="new-game-content" class="menu-pop-up-content">
+            <h2>Are you sure?</h2>
+            <div class="red-green-buttons-container">
+                <button class="confirm-option-button red" id="cancel-new-game-button">
+                    No
+                </button>
+                <button class="confirm-option-button green" id="confirm-new-game-button">
+                    Yes
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game summary pop-up -->
+    <div id="game-summary-container" class="menu-pop-up-container">
+        <div id="game-summary-content" class="menu-pop-up-content">
+            <h2>Summary</h2>
+        </div>
+    </div>
+
+</body>
+
+</html>

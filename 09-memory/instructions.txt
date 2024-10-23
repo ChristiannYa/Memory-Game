@@ -1,0 +1,55 @@
+Features to implement:
+
+Game Board:
+- Create a grid of cards (e.g., 4x4 or 6x6).
+- Each card should have a hidden symbol or image.
+
+Game Logic:
+- Allow players to flip two cards at a time.
+- If the cards match, keep them face up.
+- If they don't match, flip them back after a short delay.
+
+Score System:
+- Implement a scoring system (e.g., points for matches, penalties for mismatches).
+- Store and display the current score and high score using localStorage.
+
+Timer:
+- Add a countdown timer for each game round. 
+- Store the best time (lowest time to complete the game) using localStorage.
+
+Difficulty Levels:
+- Implement different difficulty levels (e.g., Easy: 4x4 grid, Medium: 6x6 grid, Hard: 8x8 grid).
+- Adjust the timer based on the difficulty level.
+
+Animation and Visual Feedback:
+- Add flip animations for the cards.
+- Provide visual feedback for matches and mismatches.
+
+Game Controls:
+- Add buttons to start a new game, reset scores, and change difficulty.
+
+Asynchronous Operations:
+- Use Promises or async/await for card flipping animations and match checking.
+
+Responsive Design:
+- Ensure the game works well on different screen sizes.
+
+Food
+1 Orange
+2 Banana
+3 Grapes
+4 Watermelon
+5 Broccoli
+6 Apple
+7 Kiwi
+8 Eggs
+
+9 Steak
+10 Chicken
+
+11 Burger
+12 Pizza
+
+Easy grid - 8 pairs
+Normal - 10 pairs
+Hard - 12 pairs
