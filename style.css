@@ -248,19 +248,10 @@ button:hover {
 }
 
 #game-summary-container {
-    height: fit-content;
-}
+    height: 20rem;
 
-#game-summary-container .info-container:nth-child(-n+3) {
-    border-bottom: solid 1px gray;
-
-    padding: 1rem 0;
-}
-
-#game-summary-container #new-game-button {
-    border-bottom: solid 1px gray;
-
-    margin-top: 1.5rem;
+    position: absolute;
+    top: 20%;
 }
 
 .blurred {
@@ -332,7 +323,6 @@ button:hover {
     .game-stats-moved {
         /* border: solid 4px red; */
         width: 80%;
-        height: 100%;
         /* gap: .6rem; */
 
         display: flex;
@@ -386,7 +376,7 @@ button:hover {
     }
 
     .menu-pop-up-container {
-        height: 20rem;
+        height: 13rem;
         width: 65%;
 
         position: absolute;
