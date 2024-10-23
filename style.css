@@ -247,6 +247,22 @@ button:hover {
     align-items: center;
 }
 
+#game-summary-container {
+    height: fit-content;
+}
+
+#game-summary-container .info-container:nth-child(-n+3) {
+    border-bottom: solid 1px gray;
+
+    padding: 1rem 0;
+}
+
+#game-summary-container #new-game-button {
+    border-bottom: solid 1px gray;
+
+    margin-top: 1.5rem;
+}
+
 .blurred {
     filter: blur(.3rem);
 }
@@ -315,7 +331,8 @@ button:hover {
 
     .game-stats-moved {
         /* border: solid 4px red; */
-        height: fit-content;
+        width: 80%;
+        height: 100%;
         /* gap: .6rem; */
 
         display: flex;
@@ -324,17 +341,17 @@ button:hover {
         align-items: center;
     }
 
-    .game-stats-moved>.info-container:nth-child(-n+3) {
-        border-bottom: solid 2px black;
+    .game-stats-moved .info-container:nth-child(-n+3) {
+        border-bottom: solid 1px gray;
 
-        width: 100%;
+        width: 80%;
         padding: .5rem 0;
         /* margin-bottom: .5rem; */
     }
 
     .game-stats-moved #new-game-button {
         /* border: solid 4px purple; */
-        border: solid 2px black;
+        border: solid 1px black;
         margin-top: 1rem;
     }
 
@@ -369,7 +386,7 @@ button:hover {
     }
 
     .menu-pop-up-container {
-        height: fit-content;
+        height: 20rem;
         width: 65%;
 
         position: absolute;
@@ -379,7 +396,7 @@ button:hover {
     .menu-pop-up-content {
         width: 100%;
         height: 100%;
-        gap: .8rem;
+        /* gap: .8rem; */
 
         display: flex;
         flex-direction: column;
@@ -444,6 +461,7 @@ button:hover {
 
     .game-stats-moved {
         /* border: solid 4px red; */
+        width: 80%;
         height: fit-content;
         /* gap: .6rem; */
 
@@ -454,7 +472,7 @@ button:hover {
     }
 
     .game-stats-moved>.info-container:nth-child(-n+3) {
-        border-bottom: solid 2px black;
+        border-bottom: solid 1px gray;
 
         width: 90%;
         padding: .5rem 0;
@@ -463,7 +481,7 @@ button:hover {
 
     .game-stats-moved #new-game-button {
         /* border: solid 4px purple; */
-        border: solid 2px black;
+        border: solid 1px black;
         margin-top: 1rem;
     }
 
