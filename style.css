@@ -248,7 +248,7 @@ button:hover {
 }
 
 #game-summary-container {
-    height: fit-content;
+    height: 20rem;
 
     position: absolute;
     top: 20%;
@@ -376,7 +376,7 @@ button:hover {
     }
 
     .menu-pop-up-container {
-        height: fit-content;
+        height: 13rem;
         width: 65%;
 
         position: absolute;

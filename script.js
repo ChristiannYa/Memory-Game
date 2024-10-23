@@ -408,9 +408,8 @@ const confirmNewGame = () => {
 const newGameClicked = () => {
     if (displayedSummary) {
         confirmNewGame();
-    } else {
-        openNewGameOptions();
     }
+    openNewGameOptions();
 }
 
 // Opened game summary menu
